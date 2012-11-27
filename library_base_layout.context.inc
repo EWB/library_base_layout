@@ -14,7 +14,7 @@ function library_base_layout_context_default_contexts() {
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
   $context->name = 'library_frontpage_delta';
-  $context->description = '';
+  $context->description = 'Frontpage context for the library website';
   $context->tag = '';
   $context->conditions = array(
     'path' => array(
@@ -38,17 +38,17 @@ function library_base_layout_context_default_contexts() {
           'region' => 'content_grid_second',
           'weight' => '-10',
         ),
-        'boxes-library_social_sciences_links' => array(
-          'module' => 'boxes',
-          'delta' => 'library_social_sciences_links',
-          'region' => 'content_grid_third',
-          'weight' => '-26',
-        ),
         'boxes-library_general_sources_links' => array(
           'module' => 'boxes',
           'delta' => 'library_general_sources_links',
           'region' => 'content_grid_third',
-          'weight' => '-25',
+          'weight' => '-23',
+        ),
+        'boxes-library_social_sciences_links' => array(
+          'module' => 'boxes',
+          'delta' => 'library_social_sciences_links',
+          'region' => 'content_grid_third',
+          'weight' => '-23',
         ),
         'boxes-library_interdisciplinary_links' => array(
           'module' => 'boxes',
@@ -93,6 +93,10 @@ function library_base_layout_context_default_contexts() {
     ),
   );
   $context->condition_mode = 1;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Frontpage context for the library website');
   $export['library_frontpage_delta'] = $context;
 
   $context = new stdClass();
