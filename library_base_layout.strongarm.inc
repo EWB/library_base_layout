@@ -189,7 +189,7 @@ function library_base_layout_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'nice_menus_depth_1';
-  $strongarm->value = '2';
+  $strongarm->value = '-1';
   $export['nice_menus_depth_1'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -203,7 +203,7 @@ function library_base_layout_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'nice_menus_menu_1';
-  $strongarm->value = 'main-menu';
+  $strongarm->value = 'menu-my-accounts';
   $export['nice_menus_menu_1'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -217,7 +217,7 @@ function library_base_layout_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'nice_menus_name_1';
-  $strongarm->value = 'Main Menu';
+  $strongarm->value = 'My Accounts';
   $export['nice_menus_name_1'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -263,7 +263,7 @@ function library_base_layout_strongarm() {
     'toggle_main_menu' => 1,
     'toggle_secondary_menu' => 1,
     'default_logo' => 0,
-    'logo_path' => 'public://logo.png',
+    'logo_path' => 'public://logo_4.png',
     'logo_upload' => '',
     'default_favicon' => 1,
     'favicon_path' => '',
@@ -282,12 +282,12 @@ function library_base_layout_strongarm() {
     'alpha_layouts_alpha_default_normal_responsive' => 1,
     'alpha_layouts_alpha_default_normal_weight' => '2',
     'alpha_layouts_alpha_default_normal_media' => 'all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)',
-    'alpha_layouts_alpha_default_wide_responsive' => 0,
-    'alpha_layouts_alpha_default_wide_weight' => '3',
-    'alpha_layouts_alpha_default_wide_media' => 'all and (min-width: 1220px)',
     'alpha_layouts_alpha_default_fluid_responsive' => 0,
     'alpha_layouts_alpha_default_fluid_weight' => '0',
     'alpha_layouts_alpha_default_fluid_media' => 'all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)',
+    'alpha_layouts_alpha_default_wide_responsive' => 0,
+    'alpha_layouts_alpha_default_wide_weight' => '3',
+    'alpha_layouts_alpha_default_wide_media' => 'all and (min-width: 1220px)',
     'alpha_primary_alpha_fluid' => 'normal',
     'alpha_layouts_alpha_fluid_normal_responsive' => 0,
     'alpha_layouts_alpha_fluid_normal_weight' => '0',
@@ -443,9 +443,9 @@ function library_base_layout_strongarm() {
     'alpha_region_branding_equal_height_element' => 0,
     'alpha_region_branding_equal_height_container' => 0,
     'alpha_region_menu_force' => 1,
-    'alpha_region_menu_zone' => 'branding',
+    'alpha_region_menu_zone' => 'menu',
     'alpha_region_menu_prefix' => '0',
-    'alpha_region_menu_columns' => '8',
+    'alpha_region_menu_columns' => '12',
     'alpha_region_menu_suffix' => '0',
     'alpha_region_menu_weight' => '2',
     'alpha_region_menu_position' => '0',

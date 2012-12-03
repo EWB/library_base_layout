@@ -68,15 +68,15 @@ function library_base_layout_context_default_contexts() {
           'region' => 'header_first',
           'weight' => '-9',
         ),
-        'views-featured_content-block' => array(
+        'views-featured-block' => array(
           'module' => 'views',
-          'delta' => 'featured_content-block',
+          'delta' => 'featured-block',
           'region' => 'header_second',
           'weight' => '-10',
         ),
-        'views-base_announcement-block_1' => array(
+        'views-base_announcement-block' => array(
           'module' => 'views',
-          'delta' => 'base_announcement-block_1',
+          'delta' => 'base_announcement-block',
           'region' => 'postscript_first',
           'weight' => '-10',
         ),
@@ -125,7 +125,7 @@ function library_base_layout_context_default_contexts() {
           'module' => 'nice_menus',
           'delta' => '2',
           'region' => 'menu',
-          'weight' => '-10',
+          'weight' => '-24',
         ),
         'boxes-footer' => array(
           'module' => 'boxes',
