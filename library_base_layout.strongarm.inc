@@ -42,7 +42,7 @@ function library_base_layout_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'addanother_tab_edit_library_ebook_collection';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
   $export['addanother_tab_edit_library_ebook_collection'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -56,7 +56,7 @@ function library_base_layout_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'addanother_tab_library_ebook_collection';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
   $export['addanother_tab_library_ebook_collection'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -263,10 +263,10 @@ function library_base_layout_strongarm() {
     'toggle_main_menu' => 1,
     'toggle_secondary_menu' => 1,
     'default_logo' => 0,
-    'logo_path' => 'public://logo_4.png',
+    'logo_path' => 'public://logo-library.png',
     'logo_upload' => '',
-    'default_favicon' => 1,
-    'favicon_path' => '',
+    'default_favicon' => 0,
+    'favicon_path' => 'public://favicon.ico',
     'favicon_upload' => '',
     'alpha_grid' => 'alpha_default',
     'alpha_responsive' => 1,
@@ -315,6 +315,7 @@ function library_base_layout_strongarm() {
       'sites/all/modules/contrib/date/date_popup/themes/datepicker.1.7.css' => 0,
       'sites/all/modules/contrib/date/date_repeat_field/date_repeat_field.css' => 0,
       'modules/field/theme/field.css' => 0,
+      'sites/all/modules/contrib/flexslider/assets/css/flexslider_img.css' => 0,
       'modules/node/node.css' => 0,
       'modules/search/search.css' => 0,
       'modules/user/user.css' => 0,
@@ -344,14 +345,16 @@ function library_base_layout_strongarm() {
       'modules/tracker/tracker.css' => 0,
       'modules/update/update.css' => 0,
     ),
-    'alpha_debug_block_toggle' => 1,
+    'alpha_debug_block_toggle' => 0,
     'alpha_debug_block_active' => 0,
-    'alpha_debug_grid_toggle' => 1,
+    'alpha_debug_grid_toggle' => 0,
     'alpha_debug_grid_active' => 0,
     'alpha_debug_grid_roles' => array(
       3 => '3',
       1 => 0,
       2 => 0,
+      4 => 0,
+      5 => 0,
     ),
     'alpha_toggle_messages' => 1,
     'alpha_toggle_action_links' => 1,
@@ -402,7 +405,7 @@ function library_base_layout_strongarm() {
     'alpha_zone_user_css' => '',
     'alpha_zone_user_wrapper_css' => '',
     'alpha_zone_user_equal_height_container' => 0,
-    'alpha_region_user_first_force' => 0,
+    'alpha_region_user_first_force' => 1,
     'alpha_region_user_first_zone' => 'user',
     'alpha_region_user_first_prefix' => '0',
     'alpha_region_user_first_columns' => '8',
@@ -424,7 +427,7 @@ function library_base_layout_strongarm() {
     'alpha_region_user_second_equal_height_container' => 0,
     'alpha_zone_branding_wrapper' => 1,
     'alpha_zone_branding_force' => 0,
-    'alpha_zone_branding_order' => 0,
+    'alpha_zone_branding_order' => 1,
     'alpha_zone_branding_section' => 'header',
     'alpha_zone_branding_weight' => '2',
     'alpha_zone_branding_columns' => '12',
@@ -438,20 +441,20 @@ function library_base_layout_strongarm() {
     'alpha_region_branding_columns' => '4',
     'alpha_region_branding_suffix' => '0',
     'alpha_region_branding_weight' => '1',
-    'alpha_region_branding_position' => '0',
+    'alpha_region_branding_position' => '1',
     'alpha_region_branding_css' => '',
     'alpha_region_branding_equal_height_element' => 0,
     'alpha_region_branding_equal_height_container' => 0,
-    'alpha_region_menu_force' => 1,
-    'alpha_region_menu_zone' => 'menu',
-    'alpha_region_menu_prefix' => '0',
-    'alpha_region_menu_columns' => '12',
-    'alpha_region_menu_suffix' => '0',
-    'alpha_region_menu_weight' => '2',
-    'alpha_region_menu_position' => '0',
-    'alpha_region_menu_css' => '',
-    'alpha_region_menu_equal_height_element' => 0,
-    'alpha_region_menu_equal_height_container' => 0,
+    'alpha_region_branding-second_force' => 0,
+    'alpha_region_branding-second_zone' => 'branding',
+    'alpha_region_branding-second_prefix' => '4',
+    'alpha_region_branding-second_columns' => '4',
+    'alpha_region_branding-second_suffix' => '0',
+    'alpha_region_branding-second_weight' => '2',
+    'alpha_region_branding-second_position' => '2',
+    'alpha_region_branding-second_css' => '',
+    'alpha_region_branding-second_equal_height_element' => 0,
+    'alpha_region_branding-second_equal_height_container' => 0,
     'alpha_zone_menu_wrapper' => 1,
     'alpha_zone_menu_force' => 0,
     'alpha_zone_menu_order' => 0,
@@ -462,6 +465,26 @@ function library_base_layout_strongarm() {
     'alpha_zone_menu_css' => '',
     'alpha_zone_menu_wrapper_css' => '',
     'alpha_zone_menu_equal_height_container' => 0,
+    'alpha_region_menu_force' => 1,
+    'alpha_region_menu_zone' => 'menu',
+    'alpha_region_menu_prefix' => '0',
+    'alpha_region_menu_columns' => '8',
+    'alpha_region_menu_suffix' => '0',
+    'alpha_region_menu_weight' => '2',
+    'alpha_region_menu_position' => '0',
+    'alpha_region_menu_css' => '',
+    'alpha_region_menu_equal_height_element' => 0,
+    'alpha_region_menu_equal_height_container' => 0,
+    'alpha_region_menu-second_force' => 0,
+    'alpha_region_menu-second_zone' => 'menu',
+    'alpha_region_menu-second_prefix' => '1',
+    'alpha_region_menu-second_columns' => '3',
+    'alpha_region_menu-second_suffix' => '0',
+    'alpha_region_menu-second_weight' => '3',
+    'alpha_region_menu-second_position' => '0',
+    'alpha_region_menu-second_css' => 'my-accounts-menu',
+    'alpha_region_menu-second_equal_height_element' => 0,
+    'alpha_region_menu-second_equal_height_container' => 0,
     'alpha_zone_header_wrapper' => 1,
     'alpha_zone_header_force' => 0,
     'alpha_zone_header_order' => 0,
@@ -593,7 +616,7 @@ function library_base_layout_strongarm() {
     'alpha_region_content_grid_fourth_equal_height_element' => 0,
     'alpha_region_content_grid_fourth_equal_height_container' => 0,
     'alpha_zone_content_wrapper' => 1,
-    'alpha_zone_content_force' => 1,
+    'alpha_zone_content_force' => 0,
     'alpha_zone_content_order' => 0,
     'alpha_zone_content_section' => 'content',
     'alpha_zone_content_weight' => '3',
@@ -713,6 +736,7 @@ function library_base_layout_strongarm() {
     'alpha_region_footer_second_equal_height_element' => 0,
     'alpha_region_footer_second_equal_height_container' => 0,
     'nice_menus_custom_css' => '',
+    'favicon_mimetype' => 'image/vnd.microsoft.icon',
   );
   $export['theme_slu_libraries_theme_settings'] = $strongarm;
 
