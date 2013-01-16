@@ -320,6 +320,7 @@ function library_base_layout_strongarm() {
       'modules/search/search.css' => 0,
       'modules/user/user.css' => 0,
       'sites/all/modules/contrib/views/css/views.css' => 0,
+      'sites/all/themes/slu_libraries_theme/css/print.css' => 0,
       'misc/vertical-tabs.css' => 0,
       'modules/aggregator/aggregator.css' => 0,
       'modules/block/block.css' => 0,
