@@ -21,10 +21,9 @@ function library_base_layout_delta_default_templates() {
   $delta->parent = '';
   $delta->settings = array(
     'theme_slu_libraries_theme_settings' => array(
+      'alpha_layouts_alpha_default_wide_media' => 'all and (min-width: 1220px)',
       'alpha_region_sidebar_first_zone' => NULL,
       'alpha_region_sidebar_first_equal_height_element' => FALSE,
-      'alpha_region_postscript_second_zone' => NULL,
-      'alpha_region_postscript_second_equal_height_element' => FALSE,
       'alpha_region_content_zone' => NULL,
       'alpha_region_content_equal_height_element' => FALSE,
       'alpha_region_preface_third_zone' => NULL,
@@ -33,10 +32,6 @@ function library_base_layout_delta_default_templates() {
       'alpha_region_header_third_zone' => NULL,
       'alpha_region_header_third_prefix' => '1',
       'alpha_region_header_third_equal_height_element' => FALSE,
-      'alpha_region_postscript_third_zone' => NULL,
-      'alpha_region_postscript_third_equal_height_element' => FALSE,
-      'alpha_region_postscript_fourth_zone' => NULL,
-      'alpha_region_postscript_fourth_equal_height_element' => FALSE,
       'alpha_zone_content_wrapper' => 0,
       'alpha_zone_content_section' => NULL,
       'alpha_zone_content_primary' => NULL,
@@ -49,7 +44,6 @@ function library_base_layout_delta_default_templates() {
       'alpha_region_sidebar_second_zone' => 'content_grid',
       'alpha_region_sidebar_second_columns' => '4',
       'alpha_region_sidebar_second_weight' => '5',
-      'alpha_region_postscript_first_columns' => '12',
     ),
     'color_slu_libraries_theme_files' => NULL,
     'color_slu_libraries_theme_logo' => NULL,
