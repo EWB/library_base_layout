@@ -56,6 +56,12 @@ function library_base_layout_context_default_contexts() {
           'region' => 'content_grid_fourth',
           'weight' => '-10',
         ),
+        'views-featured-block' => array(
+          'module' => 'views',
+          'delta' => 'featured-block',
+          'region' => 'header_second',
+          'weight' => '-10',
+        ),
         'boxes-front_resources_block' => array(
           'module' => 'boxes',
           'delta' => 'front_resources_block',
@@ -80,12 +86,6 @@ function library_base_layout_context_default_contexts() {
           'region' => 'header_first',
           'weight' => '-8',
         ),
-        'views-featured-block' => array(
-          'module' => 'views',
-          'delta' => 'featured-block',
-          'region' => 'header_second',
-          'weight' => '-10',
-        ),
         'views-base_announcement-block' => array(
           'module' => 'views',
           'delta' => 'base_announcement-block',
@@ -103,12 +103,6 @@ function library_base_layout_context_default_contexts() {
           'delta' => 'base_announcement-block_3',
           'region' => 'postscript_first',
           'weight' => '-7',
-        ),
-        'views-base_announcement-block_8' => array(
-          'module' => 'views',
-          'delta' => 'base_announcement-block_8',
-          'region' => 'postscript_first',
-          'weight' => '-6',
         ),
         'views-base_announcement-block_5' => array(
           'module' => 'views',
@@ -137,7 +131,7 @@ function library_base_layout_context_default_contexts() {
       ),
     ),
     'delta' => array(
-      'delta_template' => 'library_front_page',
+      'delta_template' => 'front_page',
     ),
   );
   $context->condition_mode = 1;
@@ -154,12 +148,6 @@ function library_base_layout_context_default_contexts() {
   $context->description = '';
   $context->tag = '';
   $context->conditions = array(
-    'cmd' => array(
-      'values' => array(
-        2 => 2,
-        3 => 3,
-      ),
-    ),
     'sitewide' => array(
       'values' => array(
         1 => 1,
@@ -187,11 +175,11 @@ function library_base_layout_context_default_contexts() {
           'region' => 'menu',
           'weight' => '-9',
         ),
-        'superfish-3' => array(
-          'module' => 'superfish',
-          'delta' => '3',
-          'region' => 'menu-second',
-          'weight' => '-9',
+        'crumbs-breadcrumb' => array(
+          'module' => 'crumbs',
+          'delta' => 'breadcrumb',
+          'region' => 'header_first',
+          'weight' => '-10',
         ),
         'boxes-footer' => array(
           'module' => 'boxes',
